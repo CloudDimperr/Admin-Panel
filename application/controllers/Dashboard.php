@@ -20,8 +20,10 @@ class Dashboard extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['title'] = 'HALAMAN DASHBOARD';
+
 		$this->load->helper('url');
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
 		$this->load->view('dashboard/dashboard');
         $this->load->view('templates/footer');
@@ -29,8 +31,10 @@ class Dashboard extends CI_Controller {
 
 	public function signout()
 	{
+		$data['title'] = 'LOG OUT';
+
 		$this->load->helper('url');
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
 		$this->load->view('dashboard/signout');
         $this->load->view('templates/footer');

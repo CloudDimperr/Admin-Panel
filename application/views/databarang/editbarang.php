@@ -33,91 +33,31 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>A-001-18</td>
-                                <td>Loker</td>
-                                <td>Besi</td>
-                                <td>1</td>
-                                <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/a-001-18.jpg"></span></td>
-                                <td>Baik</td>
+                        <?php
+                                $i = 1; 
+                                foreach ( $dataBarang as $row ) : 
+                            ?>
+                                <tr>
+                                <td><?= $i ?></td>
+                                <td><?= $row->kode; ?></td>
+                                <td><?= $row->nama; ?></td>
+                                <td><?= $row->bahan; ?></td>
+                                <td><?= $row->jumlah; ?></td>
+                                <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/<?= $row->gambar; ?>"></span></td>
+                                <td><?= $row->keterangan; ?></td>
                                 <td>
-                                    <a href="<?= site_url('Databarang/editbarang'); ?>;">
+                                    <a href="<?= base_url(); ?>Databarang/EditBarang/<?= $row->id ?>">
                                         <span class="dataitem__editicon"><ion-icon name="settings-outline"></ion-icon></span>
                                     </a>  
-                                    <a href="<?= site_url('Databarang/hapusbarang'); ?>">
+                                    <a href="<?= base_url(); ?>Databarang/HapusBarang/<?= $row->id ?>">
                                         <span class="dataitem__deleteicon"><ion-icon name="trash-outline"></ion-icon></span>
                                     </a>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>A-002-18</td>
-                                <td>Kipas Angin</td>
-                                <td>Miyako</td>
-                                <td>1</td>
-                                <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/a-002-18.jpg"></span></td>
-                                <td>Kurang Baik</td>
-                                <td>
-                                    <a href="<?= site_url('Databarang/editbarang'); ?>;">
-                                        <span class="dataitem__editicon"><ion-icon name="settings-outline"></ion-icon></span>
-                                    </a>  
-                                    <a href="<?= site_url('Databarang/hapusbarang'); ?>">
-                                        <span class="dataitem__deleteicon"><ion-icon name="trash-outline"></ion-icon></span>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>A-003-18</td>
-                                <td>Stand Mic</td>
-                                <td>Krezt</td>
-                                <td>1</td>
-                                <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/a-003-18.jpg"></span></td>
-                                <td>Kurang Baik</td>
-                                <td>
-                                    <a href="<?= site_url('Databarang/editbarang'); ?>;">
-                                        <span class="dataitem__editicon"><ion-icon name="settings-outline"></ion-icon></span>
-                                    </a>  
-                                    <a href="<?= site_url('Databarang/hapusbarang'); ?>">
-                                        <span class="dataitem__deleteicon"><ion-icon name="trash-outline"></ion-icon></span>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>A-004-18</td>
-                                <td>Kursi Cokelat</td>
-                                <td>Kayu</td>
-                                <td>1</td>
-                                <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/a-004-18.jpg"></span></td>
-                                <td>Baik</td>
-                                <td>
-                                    <a href="<?= site_url('Databarang/editbarang'); ?>;">
-                                        <span class="dataitem__editicon"><ion-icon name="settings-outline"></ion-icon></span>
-                                    </a>  
-                                    <a href="<?= site_url('Databarang/hapusbarang'); ?>">
-                                        <span class="dataitem__deleteicon"><ion-icon name="trash-outline"></ion-icon></span>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>A-005-18</td>
-                                <td>Dispenser</td>
-                                <td>Cosmos</td>
-                                <td>1</td>
-                                <td><span class="dataitem__img"><img src="<?= base_url();?>/public/assets/a-005-18.jpg"></span></td>
-                                <td>Baik</td>
-                                <td>
-                                    <a href="<?= site_url('Databarang/editbarang'); ?>;">
-                                        <span class="dataitem__editicon"><ion-icon name="settings-outline"></ion-icon></span>
-                                    </a>  
-                                    <a href="<?= site_url('Databarang/hapusbarang'); ?>">
-                                        <span class="dataitem__deleteicon"><ion-icon name="trash-outline"></ion-icon></span>
-                                    </a>
-                                </td>
-                            </tr>
+                                </tr>
+                            <?php 
+                                $i += 1;
+                                endforeach; 
+                            ?>
                         </tbody>
                     </table>
                 </div>
@@ -162,10 +102,10 @@
                         </div>
                     </div>
                     <div class="item__editoption">
-                        <a href="<?= site_url('Databarang/'); ?>">
+                        <a href="<?= base_url(); ?>Databarang">
                             <span class="item__canceledit">Batal</span>
                         </a>
-                        <a href="<?= site_url('Databarang/'); ?>">
+                        <a href="<?= base_url(); ?>Databarang">
                             <span class="item__saveedit">Simpan</span>
                         </a>
                     </div>

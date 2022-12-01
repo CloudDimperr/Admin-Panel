@@ -20,8 +20,10 @@ class Admin extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['title'] = 'HALAMAN ADMIN';
+
 		$this->load->helper('url');
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
 		$this->load->view('admin/adminprofile');
         $this->load->view('templates/footer');
@@ -29,8 +31,10 @@ class Admin extends CI_Controller {
 
 	public function editnama()
 	{
+		$data['title'] = 'EDIT NAMA';
+
 		$this->load->helper('url');
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
 		$this->load->view('admin/editnama');
         $this->load->view('templates/footer');
@@ -38,8 +42,10 @@ class Admin extends CI_Controller {
 
 	public function ubahpassword()
 	{
+		$data['title'] = 'UBAH PASSWORD';
+
 		$this->load->helper('url');
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
 		$this->load->view('admin/ubahpassword');
         $this->load->view('templates/footer');

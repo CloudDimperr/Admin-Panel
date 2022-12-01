@@ -49,10 +49,10 @@
             <div class="signout__popup">
                 <div class="signout__details">Apa anda yakin ingin keluar?</div>
                 <div class="signout__option">
-                    <a href="<?= site_url('Dashboard/'); ?>">
+                    <a href="<?= base_url(); ?>Dashboard">
                         <span class="signout__cancel">Batal</span>
                     </a>  
-                    <a href="<?= site_url('Signin/'); ?>">
+                    <a href="<?= base_url(); ?>Login">
                         <span class="signout">Keluar</span>
                     </a>
                 </div>

@@ -52,3 +52,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Signin';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+// Admin 
+$route['Admin'] = "Admin/index";
+$route['Admin/EditNama'] = "Admin/editnama";
+$route['Admin/UbahPassword'] = "Admin/ubahpassword";
+
+// Dashboard
+$route['Dashboard'] = "Dashboard/index";
+$route['LogOut'] = "Dashboard/signout";
+
+// Databarang
+$route['Databarang'] = "Databarang/index";
+$route['Databarang/EditBarang/(:num)'] = "Databarang/editbarang/$1";
+$route['Databarang/TambahBarang/']['post'] = "Databarang/tambahbarang";
+$route['Databarang/HapusBarang/(:num)']['delete'] = "Databarang/hapusbarang/$1";
+
+// Sign in
+$route['Login'] = "signin/index";

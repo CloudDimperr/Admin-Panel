@@ -41,12 +41,12 @@
                     </label>
                 </div>
                 <div class="admin__nameeditcancel">
-                    <a href="<?= site_url('Admin/');?>">
+                    <a href="<?= base_url();?>Admin"">
                         <span>Batal</span>
                     </a>
                 </div>
                 <div class="admin__nameeditsave">
-                    <a href="<?= site_url('Admin/');?>">
+                    <a href="<?= base_url();?>Admin"">
                         <span>Simpan</span>
                     </a>
                 </div>

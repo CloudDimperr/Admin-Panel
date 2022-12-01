@@ -13,7 +13,7 @@
                         <span>Nama : admin</span>
                     </div>
                     <div class="admin__nameedit">
-                        <a href="<?= site_url('Admin/editnama');?>">
+                        <a href="<?= base_url();?>Admin/EditNama">
                             <ion-icon name="create-outline"></ion-icon>
                         </a>  
                     </div>    
@@ -24,7 +24,7 @@
                         <span>Your Password : *********</span>
                     </div>
                     <div class="admin__passwordedit">
-                        <a href="<?= site_url('Admin/ubahpassword');?>">
+                        <a href="<?= base_url();?>Admin/UbahPassword">
                             <ion-icon name="create-outline"></ion-icon>
                         </a>
                     </div>

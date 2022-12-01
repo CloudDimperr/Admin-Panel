@@ -16,7 +16,7 @@
                 </label>
             </div>
             <div class="signin__btn">
-                <a href="<?= site_url('Dashboard/');?>">
+                <a href="<?= base_url();?>Dashboard">
                     <span class="singin__details">Sign In</span>
                 </a>  
             </div>

@@ -20,8 +20,12 @@ class Signin extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['title'] = 'HALAMAN LOGIN';
+
+		$this->load->database();
+
 		$this->load->helper('url');
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
 		$this->load->view('signin/signin');
         $this->load->view('templates/footer');
 	}
