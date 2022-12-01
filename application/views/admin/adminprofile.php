@@ -1,26 +1,31 @@
 
             <div class="admin__profile">
-                <div class="admin__pic"><ion-icon name="person-circle-outline"></ion-icon></div>
-                <div class="admin__name">
-                    <div>Nama</div>
-                    <div class="admin__namelabel">
+                <div class="admin__title">Admin</div>
+                <div class="admin__avatar">
+                    <div class="admin__avatartitle">Avatar</div>
+                    <div class="admin__avatarimg">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="admin__profileset">
+                    <div class="admin__profilesettitle">Profile Settings</div>
+                    <div class="admin__name">
+                        <span>Nama : admin</span>
+                    </div>
+                    <div class="admin__nameedit">
                         <a href="<?= site_url('Admin/editnama');?>">
-                            <span class="admin__namedetails">Admin
-                                <ion-icon name="create-outline"></ion-icon>
-                            </span>
+                            <ion-icon name="create-outline"></ion-icon>
                         </a>  
                     </div>    
                 </div>
-                <div class="admin__password">
-                    <div>Password</div>
-                    <div class="admin__passwordlabel">
-                        <span class="admin__passworddetails">********
-                            <ion-icon name="eye-off-outline"></ion-icon>
-                        </span>
+                <div class="admin__security">
+                    <div class="admin__securitytitle">Security & Password</div>
+                    <div class="admin__password">
+                        <span>Your Password : *********</span>
                     </div>
-                    <div class="admin__changepw">
+                    <div class="admin__passwordedit">
                         <a href="<?= site_url('Admin/ubahpassword');?>">
-                            <span class="admin__changepwdetails">Ubah password?</span>
+                            <ion-icon name="create-outline"></ion-icon>
                         </a>
                     </div>
                 </div>

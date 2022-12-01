@@ -157,10 +157,8 @@ img {
 
 .navigation__mainmenu--active {
     background: var(--darkblue);
-    width: (100% - 60px);
-    height: 50px;
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 80px;
     color: var(--lightblue);
 }
 
@@ -175,10 +173,8 @@ img {
 
 .navigation__menusignout--active {
     background: var(--darkblue);
-    width: (100% - 60px);
-    height: 50px;
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 80px;
     color: var(--lightblue);
 }
 
@@ -377,7 +373,8 @@ img {
 }
 
 .card__name {
-    color: var(--white);
+    color: var(--black);
+    font-weight: medium;
     font-size: 1.1em;
     margin-top: 5px;
 }
@@ -451,13 +448,13 @@ img {
 
 .dataitem__adddetails {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
 }
 
 .dataitem__add ion-icon {
     position: absolute;
     font-size: 1.2em;
-    top: 137px;
+    top: 143px;
     left: 165px;
 }
 
@@ -540,7 +537,7 @@ img {
     border-radius: 5px;
     padding: 5px;
     padding-top: 8px;
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
 }
 
@@ -554,7 +551,7 @@ img {
     border-radius: 5px;
     padding: 5px;
     padding-top: 8px;
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
 }
 
@@ -773,6 +770,7 @@ img {
     text-align: center;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
     background: var(--white);
+    border-radius: 5px;
 }
 
 .delete__details {
@@ -925,6 +923,7 @@ img {
     text-align: center;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
     background: var(--white);
+    border-radius: 5px;
 }
 
 .signout__details {
@@ -981,161 +980,112 @@ img {
     margin-top: 100px;
 }
 
-.admin__pic {
-    margin-left: 450px;
-    font-size: 5em;
+.admin__title {
+    margin-top: -80px;
+    margin-left: 30px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.admin__avatar {
+    margin-left: 130px;
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.admin__avatartitle {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.admin__avatarimg {
+    margin-left: 10px;
     cursor: pointer;
+    font-size: 5em;
+}
+
+.admin__profileset {
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px rgb(206, 203, 203) solid;
+    border-radius: 5px;
+}
+
+.admin__profileset:hover {
+    background-color: var(--barang);
+    color: var(--white);
+}
+
+.admin__profilesettitle {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: 500;
 }
 
 .admin__name {
-    margin-left: 370px;
-}
-
-.admin__namelabel {
     margin-top: 10px;
-    background: #d9d9d9;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 255px;
-    height: 30px;
-}
-
-.admin__namelabel:hover {
-    background: #979696;
-}
-
-.admin__namelabel a {
-    text-decoration: none;
+    margin-left: 10px;
+    font-size: 200;
     color: var(--black);
 }
 
-.admin__namedetails {
-    display: flex;
-    justify-content: space-between;
-}
-
-.admin__namedetails ion-icon {
-    cursor: pointer;
-}
-
-.admin__password {
-    margin-top: 10px;
-    margin-left: 370px;
-}
-
-.admin__passwordlabel {
-    margin-top: 10px;
-    background: #d9d9d9;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 255px;
-    height: 30px;
-}
-
-.admin__passwordlabel:hover {
-    background: #979696;
-}
-
-.admin__passworddetails {
-    display: flex;
-    justify-content: space-between;
-}
-
-.admin__passworddetails ion-icon {
-    cursor: pointer;
-}
-
-.admin__changepw a {
-    text-decoration: none;
-}
-
-.admin__changepwdetails {
-    color: var(--blue);
-    font-size: smaller;
-    padding-top: 10px;
-    padding-left: 155px;
-    cursor: pointer;
-}
-
-.admin__changepwdetails:hover {
-    color: var(--hoverblue);
-}
-
 .admin__nameedit {
-    position: relative;
-    margin-left: 370px;
-    width: 255px;
+    margin-top: -80px;
 }
 
 .admin__nameedit ion-icon {
-    background: var(--krgbaik);
-    color: var(--white);
+    color: var(--black);
     padding: 4px;
     border-radius: 5px;
-    margin-top: 10px;
-    width: 20px;
-    height: 20px;
+    margin-top: 24px;
+    margin-left: 270px;
+    cursor: pointer;
 }
 
 .admin__nameedit ion-icon:hover {
-    background: var(--iconkrgbaik);
+    color: var(--white);
 }
 
-.admin__nameedit label input {
-    width: 220px;
-    padding: 5px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-.password__popup {
+.admin__nameeditpopup {
     position: fixed;
     top: 160px;
     left: 450px;
     width: 450px;
-    height: 270px;
+    height: 220px;
     padding-top: 10px;
     padding-left: 10px;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
     background: var(--white);
+    border-radius: 5px;
 }
 
-.password__change {
-    line-height: 0.8em;
+.admin__nameedittitle {
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
-.password__old {
-    margin-bottom: 10px;
+.admin__nameeditdetails {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-.password__old label input {
-    width: 360px;
+.admin__nameeditdetails label input {
+    width: 380px;
     padding: 5px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-.password__new label input {
-    width: 360px;
-    padding: 5px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-.password__confirm label input {
-    width: 360px;
-    padding: 5px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-.password__cancel {
+.admin__nameeditcancel {
     width: 70px;
     height: 30px;
     margin-top: 10px;
@@ -1147,16 +1097,16 @@ img {
     cursor: pointer;
 }
 
-.password__cancel:hover {
+.admin__nameeditcancel:hover {
     background: #979696;
 }
 
-.password__cancel a {
+.admin__nameeditcancel a {
     text-decoration: none;
     color: var(--black);
 }
 
-.password__save {
+.admin__nameeditsave {
     width: 70px;
     height: 30px;
     margin-top: -30px;
@@ -1169,11 +1119,155 @@ img {
     cursor: pointer;
 }
 
-.password__save:hover {
+.admin__nameeditsave:hover {
     background: var(--hoverblue);
 }
 
-.password__save a {
+.admin__nameeditsave a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.admin__security {
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px rgb(206, 203, 203) solid;
+    border-radius: 5px;
+}
+
+.admin__security:hover {
+    background-color: var(--barang);
+    color: var(--white);
+}
+
+.admin__securitytitle {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.admin__password {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 200;
+    color: var(--black);
+}
+
+.admin__password {
+    color: var(--black);
+}
+
+.admin__passwordedit {
+    margin-top: -80px;
+    
+}
+
+.admin__passwordedit ion-icon {
+    color: var(--black);
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 24px;
+    margin-left: 270px;
+    cursor: pointer;
+}
+
+.admin__passwordedit ion-icon:hover {
+    color: var(--white);
+}
+
+.admin__pweditpopup {
+    position: fixed;
+    top: 130px;
+    left: 450px;
+    width: 450px;
+    height: 310px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.admin__pwedittitle {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.admin__pweditchange {
+    line-height: 0.8em;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.admin__pweditold {
+    margin-bottom: 10px;
+}
+
+.admin__pweditold label input {
+    width: 360px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.admin__pweditnew label input {
+    width: 360px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.admin__pweditconfirm label input {
+    width: 360px;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.admin__pweditcancel {
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+    background: #d9d9d9;
+    cursor: pointer;
+}
+
+.admin__pweditcancel:hover {
+    background: #979696;
+}
+
+.admin__pweditcancel a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.admin__pweditsave {
+    width: 70px;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: 320px;
+    padding-top: 5px;
+    padding-left: 8px;
+    border-radius: 5px;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.admin__pweditsave:hover {
+    background: var(--hoverblue);
+}
+
+.admin__pweditsave a {
     text-decoration: none;
     color: var(--white);
 }

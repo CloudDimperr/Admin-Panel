@@ -1,30 +1,54 @@
 
             <div class="admin__profile">
-                <div class="admin__pic"><ion-icon name="person-circle-outline"></ion-icon></div>
-                <div class="admin__nameedit">
-                    <div>Nama</div>
-                        <span class="admin__namedetails">
-                            <label>
-                                <input type="text" placeholder="Masukkan nama baru..">
-                            </label>
-                            <a href="<?= site_url('Admin/');?>">
-                                <span><ion-icon name="checkmark"></ion-icon></span>
-                            </a>
-                        </span>
+                <div class="admin__title">Admin</div>
+                <div class="admin__avatar">
+                    <div class="admin__avatartitle">Avatar</div>
+                    <div class="admin__avatarimg">
+                        <ion-icon name="person-circle-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="admin__password">
-                    <div>Password</div>
-                    <div class="admin__passwordlabel">
-                        <span class="admin__passworddetails">********
-                            <ion-icon name="eye-off-outline"></ion-icon>
-                        </span>
+                <div class="admin__profileset">
+                    <div class="admin__profilesettitle">Profile Settings</div>
+                    <div class="admin__name">
+                        <span class="admin__name--black">Nama : </span>
+                        <span class="admin__name--gray">admin</span>
                     </div>
-                    <div class="admin__changepw">
+                    <div class="admin__nameedit">
+                        <a href="<?= site_url('Admin/editnama');?>">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </a>  
+                    </div>    
+                </div>
+                <div class="admin__security">
+                    <div class="admin__securitytitle">Security & Password</div>
+                    <div class="admin__password">
+                        <span class="admin__password--black">Your Password :</span>
+                        <span class="admin__password--gray">*********</span>
+                    </div>
+                    <div class="admin__passwordedit">
                         <a href="<?= site_url('Admin/ubahpassword');?>">
-                            <span class="admin__changepwdetails">Ubah password?</span>
+                            <ion-icon name="create-outline"></ion-icon>
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="admin__nameeditpopup">
+                <div class="admin__nameedittitle">Edit Nama</div>
+                <div class="admin__nameeditdetails">
+                    <div>Nama</div>
+                    <label>
+                        <input type="text" placeholder="Masukkan Nama Baru..">
+                    </label>
+                </div>
+                <div class="admin__nameeditcancel">
+                    <a href="<?= site_url('Admin/');?>">
+                        <span>Batal</span>
+                    </a>
+                </div>
+                <div class="admin__nameeditsave">
+                    <a href="<?= site_url('Admin/');?>">
+                        <span>Simpan</span>
+                    </a>
                 </div>
             </div>
         </div>
