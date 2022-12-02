@@ -47,10 +47,18 @@ class Dashboard extends CI_Controller {
 	{
 		$data['title'] = 'LOG OUT';
 
+		$data['barangBaik'] = 0;
+		$data['barangRusak'] = 0;
+		$data['barangKurangbaik'] = 0;
+		$data['barangHilang'] = 0;
+		$data['jumlahBarang'] = 0;
+
+		$data['databarang'] = $this->BarangModel->get_barang();
+
 		$this->load->helper('url');
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
-		$this->load->view('dashboard/signout');
+		$this->load->view('dashboard/signout', $data);
         $this->load->view('templates/footer');
 	}
 }

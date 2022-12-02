@@ -1,8 +1,26 @@
 
+            <?php foreach ($databarang as $row) {
+                if ($row->keterangan == 'Baik')
+                {
+                    $barangBaik += $row->jumlah;
+                } elseif ($row->keterangan == 'Rusak')
+                {
+                    $barangRusak += $row->jumlah;
+                } elseif ($row->keterangan == 'Kurang Baik')
+                {
+                    $barangKurangbaik += $row->jumlah;
+                } elseif ($row->keterangan == 'Hilang') 
+                {
+                    $barangHilang += $row->jumlah;
+                }
+
+                $jumlahBarang += $row->jumlah;
+            } 
+            ?>
             <div class="card">
                 <div class="card__good">
                     <div>
-                        <div class="card__goodrate">85</div>
+                        <div class="card__goodrate"><?= $barangBaik ?></div>
                         <div class="card__name">Barang Baik</div>
                     </div>
                     <div class="card__goodicon">
@@ -11,7 +29,7 @@
                 </div>
                 <div class="card__bad">
                     <div>
-                        <div class="card__badrate">5</div>
+                        <div class="card__badrate"><?= $barangKurangbaik?></div>
                         <div class="card__name">Barang Kurang Baik</div>
                     </div>
                     <div class="card__badicon">
@@ -20,7 +38,7 @@
                 </div>
                 <div class="card__damage">
                     <div>
-                        <div class="card__damagerate">5</div>
+                        <div class="card__damagerate"><?= $barangRusak ?></div>
                         <div class="card__name">Barang Rusak</div>
                     </div>
                     <div class="card__damageicon">
@@ -29,7 +47,7 @@
                 </div>
                 <div class="card__lost">
                     <div>
-                        <div class="card__lostrate">5</div>
+                        <div class="card__lostrate"><?= $barangHilang ?></div>
                         <div class="card__name">Barang Hilang</div>
                     </div>
                     <div class="card__losticon">
@@ -38,7 +56,7 @@
                 </div>
                 <div class="card__item">
                     <div>
-                        <div class="card__itemrate">100</div>
+                        <div class="card__itemrate"><?= $jumlahBarang ?></div>
                         <div class="card__name">Jumlah Semua Barang</div>
                     </div>
                     <div class="card__itemicon">
