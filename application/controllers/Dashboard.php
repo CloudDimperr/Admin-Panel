@@ -18,14 +18,28 @@ class Dashboard extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
+
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('BarangModel');
+	}
+
 	public function index()
 	{
 		$data['title'] = 'HALAMAN DASHBOARD';
+		$data['barangBaik'] = 0;
+		$data['barangRusak'] = 0;
+		$data['barangKurangbaik'] = 0;
+		$data['barangHilang'] = 0;
+		$data['jumlahBarang'] = 0;
+
+		$data['databarang'] = $this->BarangModel->get_barang();
 
 		$this->load->helper('url');
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidetopbar');
-		$this->load->view('dashboard/dashboard');
+		$this->load->view('dashboard/dashboard', $data);
         $this->load->view('templates/footer');
 	}
 

@@ -28,6 +28,7 @@ class Databarang extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'DATA BARANG';
+		$data['i'] =  1;
 		$data['dataBarang'] = $this->BarangModel->get_barang();
 
 		$this->load->helper('url');

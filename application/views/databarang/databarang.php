@@ -34,7 +34,6 @@
                         </thead>
                         <tbody>
                             <?php
-                                $i = 1; 
                                 foreach ( $dataBarang as $row ) : 
                             ?>
                                 <tr>
